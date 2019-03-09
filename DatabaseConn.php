@@ -6,11 +6,8 @@ $databasename = "brooksidevilliage";
 
 $conn = mysqli_connect($servername, $username, $password, $databasename);
 
-if(!conn){
+if(!$conn){
 	die("Connection faileddue to the following error:".mysqli_connect_error());	
-}
-else{
-	echo "connected";
 }
 
 ?>

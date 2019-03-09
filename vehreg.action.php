@@ -14,7 +14,7 @@ if(isset($_POST['vehicle-submit'])){
 		
 	}
 	else{
-		$sql = "SELECT * FROM vehicles Where license = ?;";
+		$sql = "SELECT * FROM vehicle Where license = ?;";
 		$stmt = mysqli_stmt_init($conn);
 		if(!mysqli_stmt_prepare($stmt, $sql)){
 			header("Location: ../Vehicle.php?error=sqlerror");
@@ -33,7 +33,7 @@ if(isset($_POST['vehicle-submit'])){
 			}
 			else{
 				$approved = 0;
-				$sql= "INSERT INTO vehicles (Owner, MakeModel, Year, License, Approved) VALUES (?,?,?,?,?)";
+				$sql= "INSERT INTO vehicle (owner, MakeModel, year, license, approved) VALUES (?,?,?,?,?)";
 				$stmt = mysqli_stmt_init($conn);
 				if(!mysqli_stmt_prepare($stmt, $sql)){
 					header("Location: ../Vehicle.php?error=sqlerror");
