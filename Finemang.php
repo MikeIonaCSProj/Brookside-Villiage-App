@@ -20,7 +20,7 @@ else if($firstnum == 2){
 
 	<main>
 		<table class="table2" frame="box" cellspacing = "0", align=right>
-		<form  action ="php files/vehreg.action.php" method = "post">
+		<form  action ="php files/finemang.action.php" method = "post">
 			<?php
 				if(isset($_GET['error'])){
 					if($_GET['error'] == "emptyfeilds"){
@@ -31,8 +31,8 @@ else if($firstnum == 2){
 						echo '<p class="error"> An SQL error has occured, Please contact you Administrator </p>';
 						
 					}
-					else if($_GET['error'] == "taken"){
-						echo '<p class="error"> This vehicle already exists in our records </p>';
+					else if($_GET['error'] == "nousers"){
+						echo '<p class="error"> There is no user in our record with that name </p>';
 						
 					}
 					else if($_GET['error'] == "emptyfeilds"){
@@ -43,7 +43,7 @@ else if($firstnum == 2){
 				else if(isset($_GET['register'])){
 					
 					if($_GET['register'] == "success"){
-						echo '<p class="success"> Your vehicle registration was successfully submited. Now awaiting approval </p>';
+						echo '<p class="success"> Your fine was successfully submited. </p>';
 						
 					}
 					
@@ -51,20 +51,19 @@ else if($firstnum == 2){
 				}
 			?>
 			<tr>
-				<th>Name of owner:   <input type = "text" name = "owner" placeholder = "First Last"></th>			
+				<th>Description/Reason for Fine:   <input type = "text" name = "desc" placeholder = "Description and Rule broken"></th>			
 			</tr>
 			<tr>
-				<th>Make/Model:   <input type = "text" name = "makemodel" placeholder = "Make/Model"></th>
+				<th>Price:   <input type = "text" name = "price" placeholder = "$$.$$"></th>
 			</tr>
 			<tr>
-				<th>Year of Vehicle:   <input type = "text" name = "year" placeholder = "YYYY"></th>
+				<th>Name of Recipiant:   <input type = "text" name = "name" placeholder = "First Last"></th>
 			</tr>
+
 			<tr>
-				<th>License Plate:   <input type = "text" name = "license" placeholder = "########"></th>
+				<th><button type = "submit" name = "finemang-submit"> Submit </button></th>
 			</tr>
-			<tr>
-				<th><button type = "submit" name = "vehicle-submit"> Submit </button></th>
-			</tr>
+			
 		</form>
 		</table>
 	

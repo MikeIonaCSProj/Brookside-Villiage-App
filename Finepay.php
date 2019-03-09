@@ -20,7 +20,7 @@ else if($firstnum == 2){
 
 	<main>
 		<table class="table2" frame="box" cellspacing = "0", align=right>
-		<form  action ="php files/vehreg.action.php" method = "post">
+		<form  action ="php files/fine.action.php" method = "post">
 			<?php
 				if(isset($_GET['error'])){
 					if($_GET['error'] == "emptyfeilds"){
@@ -40,7 +40,7 @@ else if($firstnum == 2){
 						
 					}
 				}
-				else if(isset($_GET['register'])){
+				else if(isset($_GET['error'])){
 					
 					if($_GET['register'] == "success"){
 						echo '<p class="success"> Your vehicle registration was successfully submited. Now awaiting approval </p>';
@@ -51,19 +51,22 @@ else if($firstnum == 2){
 				}
 			?>
 			<tr>
-				<th>Name of owner:   <input type = "text" name = "owner" placeholder = "First Last"></th>			
+				<th>Name of Card Holder:   <input type = "text" name = "owner" placeholder = "First Last"></th>			
 			</tr>
 			<tr>
-				<th>Make/Model:   <input type = "text" name = "makemodel" placeholder = "Make/Model"></th>
+				<th>Address:   <input type = "text" name = "address" placeholder = "# street, city, state, zip code"></th>
 			</tr>
 			<tr>
-				<th>Year of Vehicle:   <input type = "text" name = "year" placeholder = "YYYY"></th>
+				<th>Card Number:   <input type = "text" name = "cardnum" placeholder = "####-####-####-####"></th>
 			</tr>
 			<tr>
-				<th>License Plate:   <input type = "text" name = "license" placeholder = "########"></th>
+				<th>Expiration Date:   <input type = "text" name = "cardnum" placeholder = "MM/YY"></th>
 			</tr>
 			<tr>
-				<th><button type = "submit" name = "vehicle-submit"> Submit </button></th>
+				<th>CVV Value:   <input type = "text" name = "cvv" placeholder = "###"></th>
+			</tr>
+			<tr>
+				<th><button type = "submit" name = "vehicle-submit"> Pay </button></th>
 			</tr>
 		</form>
 		</table>

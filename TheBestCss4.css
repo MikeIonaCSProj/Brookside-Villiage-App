@@ -1,8 +1,8 @@
 html, body {height: 100%;width: 100%;}
 body { background-image: linear-gradient(to bottom right, white, green);  background-size: cover; background-repeat: no-repeat; margin: 0;}
 h1,h2,h3 {font-family: Gabriola, Calibri, Comic Sans, sans-serif; font-size: 32pt}   /* use 1st available font */
-th {background-color:#04AF4F;}     /* colors can be specified in hex */
-td {background-color:#04AF4F;}     /* colors can be specified in hex */
+th {background-color:#04AF4F; }     /* colors can be specified in hex */
+td {background-color:#04AF4F; }     /* colors can be specified in hex */
 a:link    {color:white}	     /* an unvisited link */
 a:visited {color:white}	     /* a link that has been visited */
 a:active  {color:red}		     /* a link now being visited */
@@ -56,7 +56,7 @@ h2{
 .table2{
 	font-family: "Calibri";
 	font-size: 20pt;
-	margin-top: 100pt;
+	margin-top: 50pt;
 	margin-left: 10pt;
 	margin-right: 250pt;
 	table-layout: fixed;
@@ -69,8 +69,65 @@ h2{
 	text-align: center;
 }
 
+.table3{
+	font-family: "Calibri";
+	font-size: 20pt;
+	margin-top: 200pt;
+	table-layout: fixed;
+	height: 200px;
+	width: 50%;
+	border-style: solid;
+	border: solid green 10px;
+	border-collapse: collapse;
+	color: white;
+	text-align: center;
+}
+th.table4 {background-color:#04AF4F; border: 1px solid green;}
+td.table4 {background-color:#04AF4F; border: 1px solid green;}
+.table4{
+
+	font-family: "Calibri";
+	font-size: 20pt;
+	margin-top: 50pt;
+	margin-left: 50px;
+	table-layout: fixed;
+	height: 200px;
+	width: 45%;
+	border-style: solid;
+	border: solid green 10px;
+	border-collapse: collapse;
+	color: white;
+	text-align: center;
+}
+
+.table5{
+
+	font-family: "Calibri";
+	font-size: 20pt;
+	margin-top: 50pt;
+	margin-right: 50px;
+	table-layout: fixed;
+	height: 200px;
+	width: 45%;
+	border-style: solid;
+	border: solid green 10px;
+	border-collapse: collapse;
+	color: white;
+	text-align: center;
+}
+
 .error{
 	color:red;
+	font-family: 'Dosis', sans-serif;
+	font-weight: bold;	
+	font-size: 20pt;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.success{
+	color:green;
 	font-family: 'Dosis', sans-serif;
 	font-weight: bold;	
 	font-size: 20pt;
