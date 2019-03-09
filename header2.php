@@ -13,10 +13,10 @@
 		<table class="table1" style="width:80%", frame="box", align=right>
 			<tr>
 				<td><a href="Home.php">Home</a></td>
-				<td><a href="url">View Requests</a></td> 
+				<td><a href="url">Review Requests</a></td> 
 				<td><a href="CreateRequestForm.php">Submit Request/Task/Complaint</a></td>
-				<td><a href="Vehicle.php">Vehicle Registration</a></td>
-				<td><a href="Fine.php">Pay Fine(s)</a></td>
+				<td><a href="VehicleMang.php">Review Vehicles</a></td>
+				<td><a href="Finemang.php">Submit Fines</a></td>
 				<td><a href="url">Message User</a></td>
 			</tr>
 		</table>

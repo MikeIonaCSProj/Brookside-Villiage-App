@@ -1,21 +1,6 @@
 <?php
 
-session_start();
-
-$idnum = $_SESSION['userid'];
-$firstnum = substr($idnum, 0, 1);
-
-if($firstnum == 1){
-	
-	require "header1.php";
-	
-}
-
-else if($firstnum == 2){
-	
-	require "header2.php";
-	
-}
+require "header.php";
 
 ?>
 	<main>
@@ -40,6 +25,7 @@ else if($firstnum == 2){
 				<th>5</th>
 			</tr>
 		</table>
+		</font>
 		
 <!--  <tr>
     <td>	<form action="FacultyTable.php">
